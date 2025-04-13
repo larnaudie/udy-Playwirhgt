@@ -1,4 +1,5 @@
 import { defineConfig, devices } from '@playwright/test';
+import { on } from 'events';
 
 /**
  * Read environment variables from file.
@@ -32,7 +33,13 @@ export default defineConfig({
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     headless: false,
     trace: 'on-first-retry',
+    screenshot: 'only-on-failure',
+    video: 'retain-on-failure'
   },
+
+//grep: [ new RegExp('@smoke'), new RegExp('@sanity')],
+
+grepInvert: [ new RegExp('@smoke'), new RegExp('@sanity')],
 
   /* Configure projects for major browsers */
   projects: [
