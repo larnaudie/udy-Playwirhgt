@@ -1,0 +1,9 @@
+services:
+  playwright-test: 
+    build: .
+    image: my-custom-playwright
+    container_name: playwright_docker
+    volumes:
+      - ./:/app  # Necesario para desarrollo
+    working_dir: /app
+    command: npm run test  # Solo si tienes este script definido

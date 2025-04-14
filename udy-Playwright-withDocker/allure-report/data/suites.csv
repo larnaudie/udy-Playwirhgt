@@ -1,0 +1,2 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","9561","Login Test","chromium","Sun Apr 13 16:32:26 GMT-03:00 2025","passed","Sun Apr 13 16:32:35 GMT-03:00 2025","","orangeHrmlLogin.spec.ts","",""
